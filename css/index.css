@@ -193,6 +193,14 @@ footer {
   margin-left: 66px;
   margin-top: 10px;
 }
+.home .intro .main-header-img {
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .home .intro .main-header-img {
+    height: 126px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -210,32 +218,57 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    height: 340px;
+    margin-left: 10px;
+  }
+  .home .space-images img img .sky {
+    display: none;
+  }
+  .home .space-images img img .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  flex-direction: column;
+}
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+@media (max-width: 500px) {
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.walk .walk-text .btn {
   display: block;
   background-color: #22283A;
   padding: 10px;
@@ -249,7 +282,7 @@ footer {
   animation-name: button-bgcolorswap;
   animation-duration: 4s;
 }
-.home .walk .walk-text .btn:hover {
+.walk .walk-text .btn:hover {
   -webkit-animation-name: button-bgcolorswap;
   -webkit-animation-duration: 4s;
   animation-name: button-bgcolorswap;
@@ -269,12 +302,39 @@ footer {
     color: #22283A;
   }
 }
-.home .walk .walk-img {
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
+  .walk .walk-text .btn {
+    display: block;
+    background-color: #22283A;
+    padding: 10px;
+    font-size: 2rem;
+    width: 100%;
+    height: 38px;
+    border-radius: 12px;
+    color: #F6F7F8;
+    -webkit-animation-name: button-bgcolorswap;
+    -webkit-animation-duration: 4s;
+    animation-name: button-bgcolorswap;
+    animation-duration: 4s;
+    padding-left: 140px;
+  }
+}
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    width: 100%;
+    height: 340px;
+    margin-left: 10px;
+  }
 }
