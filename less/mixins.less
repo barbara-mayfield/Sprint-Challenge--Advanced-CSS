@@ -13,3 +13,19 @@
     font-size: @font-size;
     font-family: @font-family;
 }
+
+.buttonStyle(@bg-color, @width, @height, @border-radius, @color) {
+    display: block;
+    background-color: @bg-color;
+    padding: 10px;
+    font-size: 2rem;
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    color: @color;
+    -webkit-animation-name: button-bgcolorswap;
+    -webkit-animation-duration: 4s;
+    animation-name: button-bgcolorswap;
+    animation-duration: 4s;
+  }
+

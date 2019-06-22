@@ -68,6 +68,21 @@
       }
 
       .btn {
+        .buttonStyle(@btn-bg-color, 90px, 38px, 12px, @porcelain) 
+      }
+      
+      .btn:hover {
+        -webkit-animation-name: button-bgcolorswap;
+        -webkit-animation-duration: 4s;
+        animation-name: button-bgcolorswap;
+        animation-duration: 4s;
+      }
+  
+      @keyframes button-bgcolorswap {
+        from {background-color: @btn-bg-color;}
+          to {background-color: @porcelain;}
+        from {color: @porcelain;}
+          to {color: @btn-bg-color;}
       }
     }
 
