@@ -259,6 +259,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding: 12px;
   }
 }
 .walk .walk-text {
@@ -321,7 +322,7 @@ footer {
     -webkit-animation-duration: 4s;
     animation-name: button-bgcolorswap;
     animation-duration: 4s;
-    padding-left: 140px;
+    padding-left: 180px;
     padding-top: 18px;
   }
 }
@@ -339,5 +340,6 @@ footer {
     width: 100%;
     height: 340px;
     margin-left: 10px;
+    margin-bottom: 18px;
   }
 }
