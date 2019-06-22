@@ -312,7 +312,7 @@ footer {
     padding: 10px;
     font-size: 2rem;
     width: 100%;
-    height: 38px;
+    height: 58px;
     border-radius: 12px;
     color: #F6F7F8;
     -webkit-animation-name: button-bgcolorswap;
@@ -320,6 +320,7 @@ footer {
     animation-name: button-bgcolorswap;
     animation-duration: 4s;
     padding-left: 140px;
+    padding-top: 18px;
   }
 }
 .walk .walk-img {
