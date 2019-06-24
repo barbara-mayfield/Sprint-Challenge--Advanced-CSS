@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+In an adaptive website widths are hard coded at each media query and there is a quick deployment for specific devices where in a fully responsive website responsive units are used throughout them and they are more expensive and take longer to build and deploy. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A website that is mobile first is designed with the mobile viewport first and then adapted to tablets and desktop page views. Desktop first is arranged opposite, where the site layout is designed for desktop and then styled with max-width media queries down to smaller viewports. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+`font-size: 62.5%` gives us a value in the `html` root element that `rem` will look for to base it's relative size to. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I tried explaining preprocessing to my roomate and I told her, "preprocessing is 
+just using a different syntax thrown into a compiler that spits out the CSS results you want, its really cool!"
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I think my favorite concept in preprocessing is that LESS compiler tells you in the terminal when there is an error so you can pick up on it faster and correct things instead of sitting there pouring over code trying to figure out what went wrong. 
+
+The thing I had the most trouble with was just making sure to not start the compiling until I had the CSS copied over to the less files I created while refactoring one of my projects. I lost all my CSS and I learned a very valuable lesson out of it though: be very careful!
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

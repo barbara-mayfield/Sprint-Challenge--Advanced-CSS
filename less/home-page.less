@@ -1,8 +1,28 @@
 // Home Content
 
+.navigation {
+  .displayFlex(column, wrap, space-around, center);
+
+  h1 {
+    font-size: 4rem;
+    margin-left: 66px;
+    margin-top: 10px;
+    }
+
+  
+}
+
 .home {
 
   .intro {
+
+    .main-header-img {
+      border-radius: 12px;
+      
+      @media @phone {
+        height: 126px;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -19,13 +39,39 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+        .sky {
+              display: none;
+              }
+              
+        .launch {
+              display:none;
+            }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+
+      @media @phone {
+        width: 100%;
+        height: 340px;
+        margin-left: 10px;
+       
+      }
+
+    
   }
+  }
+}
+
+
+    @media @phone {
+      flex-direction: column;
+    }
+  
 
   .visit-planets {
     padding: 15px;
@@ -46,6 +92,10 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .displayFlex(column-reverse, wrap, center, center);
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,9 +108,37 @@
       }
 
       .btn {
-      }
-    }
+        .buttonStyle(@btn-bg-color, 90px, 38px, 12px, @porcelain) 
 
+      }
+      
+      .btn:hover {
+        -webkit-animation-name: button-bgcolorswap;
+        -webkit-animation-duration: 4s;
+        animation-name: button-bgcolorswap;
+        animation-duration: 4s;
+      }
+      
+      @keyframes button-bgcolorswap {
+        from {background-color: @btn-bg-color;}
+        to {background-color: @porcelain;}
+        from {color: @porcelain;}
+        to {color: @btn-bg-color;}          
+      }
+      
+      @media @phone {
+        width: 100%;
+
+        .btn {
+          .buttonStyle(@btn-bg-color, 100%, 58px, 12px, @porcelain);
+          padding-left: 140px;
+          padding-top: 18px;
+        }
+      }
+    
+    
+    }
+    
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -70,6 +148,12 @@
         height: auto;
         border-radius: 10px;
       }
+
+    @media @phone {
+        width: 100%;
+        height: 340px;
+        margin-left: 10px;
     }
-  }
-}// home
+    
+    }
+  }// home
